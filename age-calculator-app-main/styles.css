@@ -1,0 +1,119 @@
+@media only screen and (max-width:605px) {
+    body {
+        background-color: aquamarine;
+    }
+}
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:  #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: white;
+    box-shadow: 0 5px 5px 5px rgba(26, 27, 34, 0.3);
+    border-radius: 20px 20px 170px 20px;
+    margin: 100px auto;
+    padding: 1em;
+    height: 500px;
+    width: 550px;
+}
+.form {
+    padding: 25px 20px;
+}
+.form-field {
+    width: 30%;
+    display: inline-block;
+    padding-left: 10px;
+}
+.form-field input {
+    border: solid 2px #f0f0f0 ;
+    display: inline-block;
+    text-align: left;
+    border-radius: 6px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 100px;
+}
+.form-field label {
+    display: flex;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.form-field small {
+    color: var(--error-color);
+    font-size: 10px;
+}
+.form-field.error input {
+    border: solid 1.5px var(--error-color);
+    border-color: var(--error-color);
+}
+.form-field.success input {
+    border: solid 1.5px var(--success-color);
+    border-color: var(--success-color);
+}
+.form-field input:focus {
+    outline: none;
+}
+.form-field1 {
+    border: none;
+    border-radius: 40px;
+    height: 60px;
+    float: right;
+    width: 60px;
+    margin: -17px auto;
+    background: linear-gradient(0deg,
+    hsl(252, 100%, 67%),
+    rgb(141, 60, 233)
+    );
+}
+.form-field1:hover {
+    background: black;
+    cursor: pointer;
+}
+hr {
+    opacity: 0.2;
+    display: inline-block;
+    width: 408px;
+}
+.form-field hr {
+    border: 1px light grey;
+}
+.date {
+    line-height: 90px;
+    padding: 10px;
+    margin: 15px auto;
+}
+.dates {
+    display: inline;
+}
+.yr {
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 75px;
+    font-weight: 900;
+    font-style: italic;
+}
+h1 {
+    font-style: italic;
+    font-size: 90px;
+    color: rgb(141, 60, 233);
+}
